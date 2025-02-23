@@ -1,6 +1,6 @@
 // License Beerware
 // Author Magic S.L.
-osc(()=>100+50*a.fft[0],0.01) // Bass rythm
+osc(()=>100+50*a.fft[0],[0, 0.001]) // Bass rythm
   .kaleid(100) // Speaker effect
   .diff(solid(()=>a.fft[4],()=>a.fft[3],()=>a.fft[2])) // Color speaker using medium and trebles volume
   .out()
