@@ -1,0 +1,6 @@
+[submodule "hyper-hydra"]
+	path = hyper-hydra
+	url = https://github.com/geikha/hyper-hydra.git
+[submodule "hydra"]
+	path = hydra
+	url = https://github.com/hydra-synth/hydra.git
