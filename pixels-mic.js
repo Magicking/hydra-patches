@@ -5,8 +5,8 @@ shape([4, 5])
   .diff(
     shape([5, 6])
       .rotate(() => time * -1)
-      .scale(() => 1.9 * a.fft[0]),
+      .scale(() => 1.9 * a.fft[0])
   )
   .pixelate()
-  .out(o0);
-a.show();
+  .out(o0)
+a.show()

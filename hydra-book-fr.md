@@ -68,7 +68,7 @@ Dans Hydra, le `voronoi()` crée des textures géométriques aux formes organiqu
 ### Exemple d'utilisation
 
 ```javascript
-voronoi(10, 0.3, 0.5).out();
+voronoi(10, 0.3, 0.5).out()
 ```
 
 Dans cet exemple :
