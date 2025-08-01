@@ -1,11 +1,11 @@
 // License Beerware
 // Sylvain "Magicking" Laurent
 // Midi controlling with note cc
-await loadScript('https://cdn.jsdelivr.net/npm/hydra-midi@latest/dist/index.js')
-await loadScript('https://hyper-hydra.glitch.me/hydra-text.js')
-await loadScript('https://hyper-hydra.glitch.me/hydra-fractals.js')
-await loadScript('https://hyper-hydra.glitch.me/hydra-outputs.js')
-await loadScript('https://hyper-hydra.glitch.me/hydra-colorspaces.js')
+await loadScript('https://6120.eu/public/midi.js')
+await loadScript('https://6120.eu/public/hh/hydra-text.js')
+await loadScript('https://6120.eu/public/hh/hydra-fractals.js')
+await loadScript('https://6120.eu/public/hh/hydra-outputs.js')
+await loadScript('https://6120.eu/public/hh/hydra-colorspaces.js')
 
 // Use midi messages from all channels of all inputs.
 await midi.start().show()
