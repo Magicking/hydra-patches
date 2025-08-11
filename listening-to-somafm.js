@@ -2,10 +2,10 @@
 // Sylvain "Magicking" Laurent
 // Listening to https://soma.fm
 
-await loadScript('https://hyper-hydra.glitch.me/hydra-text.js')
-await loadScript('https://hyper-hydra.glitch.me/hydra-fractals.js')
-await loadScript('https://hyper-hydra.glitch.me/hydra-outputs.js')
-await loadScript('https://hyper-hydra.glitch.me/hydra-colorspaces.js')
+await loadScript('https://h.6120.eu/hydra-text.js')
+await loadScript('https://h.6120.eu/hydra-fractals.js')
+await loadScript('https://h.6120.eu/hydra-outputs.js')
+await loadScript('https://h.6120.eu/hydra-colorspaces.js')
 s0.initImage('https://g.6120.eu/qrtwitch.png')
 
 oS.setLinear()

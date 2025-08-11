@@ -2,10 +2,10 @@
 await loadScript('https://cdn.jsdelivr.net/npm/hydra-midi@latest/dist/index.js')
 await midi.start().show()
 
-await loadScript('https://hyper-hydra.glitch.me/hydra-fractals.js')
-await loadScript('https://hyper-hydra.glitch.me/hydra-outputs.js')
-await loadScript('https://hyper-hydra.glitch.me/hydra-colorspaces.js')
-await loadScript('https://hyper-hydra.glitch.me/hydra-canvas.js')
+await loadScript('https://h.6120.eu/hydra-fractals.js')
+await loadScript('https://h.6120.eu/hydra-outputs.js')
+await loadScript('https://h.6120.eu/hydra-colorspaces.js')
+await loadScript('https://h.6120.eu/hydra-canvas.js')
 //2054 x 2518,
 setResolution(2054, 2518)
 //setResolution(2256, 1504)

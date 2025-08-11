@@ -1,5 +1,5 @@
 l = loadScript
-await l('https://hyper-hydra.glitch.me/hydra-text.js')
+await l('https://h.6120.eu/hydra-text.js')
 hydraText.font = 'Roboto'
 hydraText.lineWidth = '2%'
 t = ' Titre: Dolores ipsum est '
