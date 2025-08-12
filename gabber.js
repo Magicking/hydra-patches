@@ -1,4 +1,4 @@
-bpm = 220
+bpm = 120
 osc()
   .scale(() => a.fft[0])
   .color([1], [1, 0], 0)
@@ -7,7 +7,7 @@ osc()
   .diff(shape([3, 42, 3].smooth()).scale(() => a.fft[1] * 1.3))
   .diff(shape([3, 42, 3].smooth()).scale(() => a.fft[1] * 1.1))
   .repeat([3, 4], [3, 4])
+  .scale(()=>time/10%3)
   .blend(o0, 0.6)
   .out()
-
-a.show()
+a.setBins(4)
