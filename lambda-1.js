@@ -1,9 +1,6 @@
 // License Beerware
 // Sylvain "Magicking" Laurent
-// Midi controlling with note cc
 
-await loadScript('https://6120.eu/public/midi.js')
-await loadScript('https://6120.eu/public/hh/hydra-text.js')
 setResolution(2500, 2500)
 // Use midi messages from all channels of all inputs.
 await midi.start().show()
