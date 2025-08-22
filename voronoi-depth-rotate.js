@@ -1,0 +1,16 @@
+a.show()
+a.setScale(8)
+a.setCutoff(0)
+a.setBins(4)
+t=.4
+c=10
+setResolution(3000,3000)
+voronoi(()=>a.fft[0]+c).hue(t).color([.1,.7].smooth(),0,0)
+  .mult(solid([-2,2].smooth(),-2,-2))
+  .diff(voronoi(()=>a.fft[1]+c).hue(t).color(0,1,0))
+  .diff(voronoi(()=>a.fft[2]+c).hue(t).color(0,0,1))
+  .diff(voronoi(()=>a.fft[3]+c).hue(t).color(.45,1,1))
+  .blend(o0,0.4)
+  .modulateRotate(noise(()=>(a.fft[0]+a.fft[1]+a.fft[2]+a.fft[3]))/3)
+  .out()
+a.setSmooth(.01)
