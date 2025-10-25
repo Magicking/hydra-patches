@@ -1,6 +1,19 @@
-shape(()=>a.fft[1]*4+4).scale(2,2).repeat(()=>a.fft[1]*20,()=>-a.fft[0]*10).color(1,0,1).mult(voronoi(()=>a.fft[0]*30)).kaleid(4).out()
+shape(() => a.fft[1] * 4 + 4)
+  .scale(2, 2)
+  .repeat(
+    () => a.fft[1] * 20,
+    () => -a.fft[0] * 10
+  )
+  .color(1, 0, 1)
+  .mult(voronoi(() => a.fft[0] * 30))
+  .kaleid(4)
+  .out()
 src(o0).out(o1)
-src(o1).diff(o0).blend(o0,1.4).rotate(()=>a.fft[1]*3).out(o2)
-  render(o2)
+src(o1)
+  .diff(o0)
+  .blend(o0, 1.4)
+  .rotate(() => a.fft[1] * 3)
+  .out(o2)
+render(o2)
 a.setBins(4)
 a.setSmooth(0.2)
