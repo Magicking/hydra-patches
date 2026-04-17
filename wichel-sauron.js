@@ -10,7 +10,12 @@ crown = new Array(13).fill().reduce(
 )
 crown
   .layer(voronoi().mask(noise(20).modulate(noise(10).luma(0.4, 0.9), 0.2)))
-  .layer(src(s0).mask(shape(99,.6)).scale([.6,.72,.7,.6,.62,.7].smooth()),.4)
+  .layer(
+    src(s0)
+      .mask(shape(99, 0.6))
+      .scale([0.6, 0.72, 0.7, 0.6, 0.62, 0.7].smooth()),
+    0.4
+  )
   .out()
 
-s0.initImage("https://6120.eu/public/wichel.jpg")
+s0.initImage('https://6120.eu/public/wichel.jpg')
