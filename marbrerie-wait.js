@@ -1,11 +1,11 @@
 i = 0
 
-if (Date.now() > (new Date(2026,7,29,19,0,0)).getTime()) i++;
-if (Date.now() > (new Date(2026,7,29,20,0,0)).getTime()) i++;
-if (Date.now() > (new Date(2026,7,29,20,45,0)).getTime()) i++;
-if (Date.now() > (new Date(2026,7,29,22,15,0)).getTime()) i++;
-if (Date.now() > (new Date(2026,7,29,23,15,0)).getTime()) i++;
-if (Date.now() > (new Date(2026,7,30,2,30,0)).getTime()) i++;
+if (Date.now() > new Date(2026, 7, 29, 19, 0, 0).getTime()) i++
+if (Date.now() > new Date(2026, 7, 29, 20, 0, 0).getTime()) i++
+if (Date.now() > new Date(2026, 7, 29, 20, 45, 0).getTime()) i++
+if (Date.now() > new Date(2026, 7, 29, 22, 15, 0).getTime()) i++
+if (Date.now() > new Date(2026, 7, 29, 23, 15, 0).getTime()) i++
+if (Date.now() > new Date(2026, 7, 30, 2, 30, 0).getTime()) i++
 console.log(i)
 render(o0)
 
@@ -17,7 +17,7 @@ hydraText.font = 'Roboto'
 hydraText.lineWidth = '3%'
 slide = [
   {
-    t: "Mélissa.wav",
+    t: 'Mélissa.wav',
   },
   {
     t: 'Liyom',
@@ -65,13 +65,10 @@ src(o0)
   .blend(o0, 1)
 
 shape(2, 0.1)
-  .blend(src(o0).scale(.02).color(0.1, 0.1, 0.7))
+  .blend(src(o0).scale(0.02).color(0.1, 0.1, 0.7))
   .layer(text(slide[i].t))
   .diff(
-    strokeText(slide[i].t).modulateScale(
-      osc(0.5,.1, 10).colorama(2),
-      0.3
-    )
+    strokeText(slide[i].t).modulateScale(osc(0.5, 0.1, 10).colorama(2), 0.3)
   )
   .diff(src(o0).colorama([-1, 1].smooth()).repeat(1, 3))
   .invert(-1)
