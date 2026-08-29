@@ -1,0 +1,28 @@
+await loadScript('https://6120.eu/public/hh/midi.js')
+await midi.start().show()
+s0.initImage('https://6120.eu/public/Blue Bird.svg')
+lead = midi.input('*').channel(0)
+lead2 = midi.input('*').channel(6)
+
+shape(() => a.fft[1] * 4 + 4)
+  .scale(2, 2)
+  .repeat(
+    () => a.fft[1] * 20+2,
+    () => -a.fft[0] * 10+2
+  )
+  .color(1, [0,2], 1)
+  .mult(voronoi(() => 10+a.fft[0] * 30))
+  .kaleid(4)
+  .out()
+src(o0).out(o1)
+src(o1)
+  .diff(o0)
+  .blend(o0, 1.4)
+  .rotate(() => a.fft[1] * 3)
+  .blend(src(s0).kaleid(0),.5)
+  .out(o2)
+render(o2)
+setResolution(1480,1400)
+a.show()
+a.setBins(4)
+a.setSmooth(0.2)
